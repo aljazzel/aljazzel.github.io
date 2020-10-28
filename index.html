@@ -36,7 +36,8 @@
 
         const ctx = canvas.getContext("2d");
 
-        instance.exports.go();
+        let result = instance.exports.go();
+        console.log(result);
 
         ctx.putImageData(image, 0, 0);
     }
