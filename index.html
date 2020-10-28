@@ -6,6 +6,9 @@
             margin: 0px auto;
             padding: 0px;
         }
+        body {
+            background-color: #2389a9;
+        }
     </style>
 </head>
 <body>
@@ -185,7 +188,8 @@
     };
 
     var mouseMove = function(e) {
-        if (!drag) return false;
+        if (!drag) 
+            return false;
         dX = (e.pageX-old_x)*2*Math.PI/canvas.width,
         dY = (e.pageY-old_y)*2*Math.PI/canvas.height;
         THETA+= dX;
